@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="KayBee.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            color: #FFFFFF;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: x-large;
+            text-decoration: overline underline;
+        }
+        .auto-style2 {
+            color: #FFFFFF;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: x-large;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div >
+            <div class="imageBack">
+            <div style="background-color:rgba(0,0,0,0.5);height:100%"> 
+            <table align="center" style="width:1024px;">
+                <tr style="height:100px;">
+                    <td class="auto-style1"><strong>KANYANE BOTSHELO MADUANA CV</strong></td>
+                </tr>
+                <tr style="height:50px;">
+                    <td>
+                        <ul id="menu">
+                            <li><a href="Home.aspx">Home</a> </li>
+                            <li><a href="About.aspx">About</a> </li>
+                            <li><a href="Resume.aspx">Resume</a> </li>
+                            <li><a href="Details.aspx">Details</a> </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr style="height:400px; vertical-align:top;">
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr style="height:100px;">
+                    <td class="auto-style2">&copy Copyright : created by KB Maduana - 2021</td>
+                </tr>
+            </table>
+        </div>
+          </div>
+            </div>
+    </form>
+</body>
+</html>
